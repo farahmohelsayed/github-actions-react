@@ -5,4 +5,4 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Check issues
-              run: echo "An issue event has been triggered ${{ github.event}}"
+              run: echo "An issue event has been triggered ${{ toJson(github.event) }}"
